@@ -229,19 +229,14 @@
     </script>
 
     <script>
-      // Get all the navigation links
       const navLinks = document.querySelectorAll('nav ul li a');
     
-      // Loop through the links and add a click event listener to each one
       navLinks.forEach(link => {
         link.addEventListener('click', e => {
-          // Prevent the default link behavior
           e.preventDefault();
     
-          // Get the section that the link points to
           const section = document.querySelector(link.hash);
-    
-          // Scroll smoothly to the section
+          
           section.scrollIntoView({
             behavior: 'smooth'
           });

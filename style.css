@@ -160,11 +160,11 @@ body{
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid white;
-    transition: transform 0.2s ease-in-out; /* add transition for smooth effect */
+    transition: transform 0.2s ease-in-out; 
   }
   
   .bigbrew-img-about-us:hover {
-    transform: scale(1.1); /* zoom in by 10% */
+    transform: scale(1.1); 
   }
 
   .container-aboutus {
@@ -175,7 +175,7 @@ body{
     padding-top: 30px;
     padding-bottom: 40px;
     border-radius: 15px;
-    position: relative; /* add this to make the ::before element position relative to this container */
+    position: relative; 
   }
 
 
