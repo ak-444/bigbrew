@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@600&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    top: 0px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 30px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: all ease-in-out 200ms;
+    position: relative;
+  }
+  
+  .navbar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #d48734;
+    z-index: 1;
+  }
+
+
+.logo{
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    padding-left: 20px;
+    color: #d48734;
+
+}
+
+.navbar ul li a:hover{
+    color: #d48734;
+}
+
+.navbar ul li a:hover::before {
+    content: "";
+    position: absolute;
+    left: -8px; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #d48734;
+  }
+
+  .home-title{
+    color: #ffffff;
+    font-size: 53px;
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 1px;
+  }
+
+  .container{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 100px;
+  }
+
+  .home-img {
+    margin-top: 45px;
+    padding-right: 100px;
+    width: 575px;
+  }
+  .bigbrew{
+    color: #d48734;
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 1px;
+  }
+
+  p{
+    padding-top: 1px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+
+  .home-text{
+    padding-top: 180px;
+    margin: 2rem;
+    padding-right: 120px;
+  }
+
+  h2{
+    color: #ffffff;
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+
+  }
+  #about-us{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+  }
+
+  .about-us-title{
+    display: flex;
+
+  }
+
+  .about-us-paragraph{
+    padding-top: 1px;
+    float: right;
+    display: flex;
+    padding-right: 50px;
+    color: #000000;
+  }
+
+  .p-about-us{
+    color: #ffffff;
+  }
+
+  .bigbrew-img{
+    margin-left: 3rem;
+  }
+
+  .bigbrew-img-about-us {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform 0.2s ease-in-out; /* add transition for smooth effect */
+  }
+  
+  .bigbrew-img-about-us:hover {
+    transform: scale(1.1); /* zoom in by 10% */
+  }
+
+  .container-aboutus {
+    justify-content: center;
+    margin-left: 60px;
+    padding-left: 30px;
+    margin-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    position: relative; /* add this to make the ::before element position relative to this container */
+  }
+
+
+  .product-list {
+    margin-top: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 0 10px;
+    text-align: left;
+  }
+  
+  .product {
+    padding: 20px 13px;
+    text-align: center;
+  }
+  
+  .product h3 {
+    margin-top: 0;
+  }
+  
+  .product p {
+    margin-bottom: 0;
+  }
+  
+  button {
+    background-color: #d48734;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+  }
+  
+  button:hover {
+    background-color: #bf6d23;
+    transform: scale(1.1);
+  }
+
+  .img-bigbrew-products{
+    width: 300px;
+    height: 300px;
+  }
+  
+  .products-title{
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .button-products{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer{
+    border-top: 1px solid #d48734;
+    margin-top: 6rem;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .main-content{
+    display: flex;
+  }
+
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 20px 35px;
+  }
+
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: sans-serif;
+  }
+
+  .box .content{
+    margin: 20px 0 0 0;
+
+  }
+
+  .left .content .social{
+    margin: 20px 0 0 0;
+
+  }
+
+  .left .content p{
+    text-align: justify;
+  }
+
+  .left .content .social a{
+    padding: 0 2px;
+  }
+
+  i{
+    color: #d48734;
+  }
+
+  .left .content .social a i{
+    height: 35px;
+    width: 35px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+
+  }
+
+  .phone .text{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .place {
+    display: flex;
+    align-items: center;
+  }
+  
+  .place a {
+    margin-right: 10px; 
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .phone a {
+    margin-right: 10px; 
+  }
+
+  .email {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .email a {
+    margin-right: 10px; 
+  }
+
+  .center box  .content{
+    padding-bottom: 10px;
+  }
+
+  .place,
+  .phone,
+  .email {
+    margin-bottom: 10px; 
+  }
+
+  .registration-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .registration-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .registration-form h2 {
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registration-form button[type="submit"] {
+    background-color: #d48734;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #919191;
+  }
+  
+  .close-button:hover {
+    color: #000;
+  }
+
+  .location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 800px;
+  }
+
+  .location-image {
+    max-width: 100%;
+    width: 2300px;
+    height: auto;
+  }
+
+  .location-text {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .location-container img{
+    margin-top: 20px;
+  }
+
+  iframe{
+    padding-top: 20px;
+  }
